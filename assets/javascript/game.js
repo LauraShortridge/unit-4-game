@@ -68,6 +68,7 @@ $(document).ready(function(){
     $("#playersScore").text(score); 
     $("#wins").text(wins);
     $("#losses").text(losses); 
+    $("#gamealert").text("Click on a crystal!"); 
 
     $("#crystalOne").attr("data-crystalvalue", crystalOneNumber);
     console.log(crystalOneNumber, "image crystalOneNumber");
@@ -94,14 +95,15 @@ $(document).ready(function(){
             wins++;
             $("#wins").text(wins); 
             $("#playersScore").text(score); 
-            alert("You won!");
+            $("#gamealert").text("You won!"); 
         } else if (score > pickedNumber) {
             reset(); 
             losses++; 
             $("#losses").text(losses); 
             $("#playersScore").text(score); 
-            alert("You lost!");
+            $("#gamealert").text("You lost. Try again!"); 
         } else { 
+            $("#gamealert").text("Click on a crystal!"); 
             return;
         }
  
@@ -135,5 +137,6 @@ $(document).ready(function(){
         crystalFourRandom = Math.floor(Math.random()*crystalFourArray.length); 
         crystalFourNumber = crystalFourArray[crystalFourRandom];
         console.log(crystalFourNumber, "crystalFourNumber");
+
     }
 }); 

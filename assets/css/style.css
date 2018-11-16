@@ -1,0 +1,28 @@
+#heading {
+   color: rgb(241, 201, 253); 
+   background-image: url("../images/amethyst3.jpg");
+   margin-bottom: 0; 
+  }
+
+#instructions {
+    color: rgb(255, 143, 199);
+}
+
+.black {
+    background-color: black;
+    color: white; 
+}
+
+#gamealert {
+    font-size: 20px; 
+    color: rgb(31, 206, 236); 
+}
+
+#footer {
+    background-image: url("../images/amethyst3.jpg");
+    transform: rotate(180deg); 
+    margin-top: 0; 
+    margin-bottom: 0; 
+    min-height: 147px; 
+    /* height: auto;  */
+}

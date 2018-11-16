@@ -15,21 +15,21 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <h1 class="jumbotron col-lg-12 text-center" id="heading">Crystal Collector</h1>
+            <h1 class="jumbotron jumbotron-fluid col-lg-12 text-center" id="heading">Crystal Collector</h1>
         </div>
-        <div class="row">
-            <div class="col-lg-4">
+        <div class="row black">
+            <div class="col-lg-4 mt-4">
                 <h4 id="instructions">Instructions:</h4>
-                <p>You will be given a random number at the start of the game.</p>
-                <p>There are four cystals below. By clicking on a crystal you will add a specific amount of points to
-                    your
-                    total score.</p>
-                <p>You win the game by matching your total score to the random number, you lose the game if your total
+                <p>You are given a random number at the start each game.</p>
+                <p>There are four cystals. Clicking on a crystal you will add a specific amount of points to
+                    your score.</p>
+                <p>You win the game by matching your score to the random number and you lose the game if your
                     score goes above the random number.</p>
-                <p>The value of each crystal is hidden from you until you click on it.</p>
-                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                <p>The value of each crystal is hidden from you but will remain the same during the game.</p>
+                <p>Each time a new game starts, the values of each crystal will change.</p>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 text-center mt-4">
+                <p id="gamealert"></p>
                 <p>Random Number:</p>
                 <p id="randomNumber"></p>
                 <p>Your Score:</p>
@@ -48,6 +48,11 @@
                     width="200px">
                 <img src="assets/images/diamond-blue.jpg" class="allCrystals" id="crystalFour" alt="Blue Diamond"
                     height="200px" width="200px">
+            </div>
+        </div>
+        <div class="row">
+            <div class="jumbotron jumbotron-fluid col-lg-12" id="footer">
+
             </div>
         </div>
     </div>
